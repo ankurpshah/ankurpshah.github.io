@@ -51,4 +51,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-include: [_pages, .well-known]
+include: [_pages, .well-known, online-cv]
