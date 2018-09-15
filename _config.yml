@@ -1,39 +1,53 @@
-# Site settings
 title: Ankur Shah
-description: 'Solution Architect, DevOps'
-url: 'http://ankurpshah.com/'
-baseurl: '/'
-# google_analytics: 'UA-XXXXXX-X'
-disqus_shortname: 'www-ankurpshah-com'
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: ':title/'
+blog_theme: dark # Or use dark
 
-author:
-  name: 'Ankur Shah'
-  email: ankur@ankurpshah.com
-  twitter_username: ankurpshah
-  facebook_username: geek2nerd
-  github_username:  ankurpshah
-  linkedin_username:  ankurpshah
+# Profile information
+name: Ankur Shah
+tagline: Principle Site Reliability Engineer
+about-description: Architect/DevOps, Unix lover, Security Enthusiast, Firmly Automation Believer.
 
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
+pic: ankur.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
+
+# Contact links
+email: ankur@ankurpshah.com # Add your Email address
+phone: 01 848 248 6176 # Add your Phone number
+website: www.ankurpshah.com # Add your website, do not add http://
+linkedin: ankurpshah # Add your Linkedin handle
+github: ankurpshah # Add your Github handle
+twitter: '@ankurpshah' # Add your Twitter handle
+
+# Tracker
+analytics:
+
+# Comments
+discus-identifier: 'www-ankurpshah-com'# Add your Disqus identifier
+
+# Important settings
+assets:
+  sources:
+    - assets/fonts
+    - assets/img
+    - assets/js
+    - assets/stylesheets
 
 # Build settings
-destination: _site
-paginate: 10
-permalink: /:year/:title/
-markdown: kramdown
-highlighter: rouge
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
 
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
+gems:
+  - jekyll-feed
+  - jekyll-assets
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
-gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+include: [_pages]
