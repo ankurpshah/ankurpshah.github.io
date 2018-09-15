@@ -37,6 +37,7 @@ assets:
     - assets/js
     - assets/stylesheets
 
+
 # Build settings
 exclude:
   - Gemfile
