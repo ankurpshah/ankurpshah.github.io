@@ -17,8 +17,8 @@ gem "jekyll", "3.4.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-feed", "~> 0.6"
-   gem "jekyll-assets"
+   gem "jekyll-feed", "~> 0.9", ">= 0.9.1"
+   gem "jekyll-assets", ">= 2.2.8"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
